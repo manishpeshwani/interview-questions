@@ -58,7 +58,7 @@ public class DisjointSet<T> {
             parent1.rank = (parent1.rank == parent2.rank) ? parent1.rank + 1 : parent1.rank;
 		}else {
 			parent1.parent = parent2;
-			
+			parent2.rank = (parent1.rank == parent2.rank) ? parent2.rank + 1 : parent2.rank;
 		}
 		
 		return false;

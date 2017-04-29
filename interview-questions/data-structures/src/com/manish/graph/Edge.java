@@ -52,7 +52,7 @@ public class Edge {
 
 	@Override
 	public String toString() {
-		return "Edge [source=" + source + ", destination=" + destination + ", weight=" + weight + "]";
+		return "E [s=" + source + ", d=" + destination + ", w=" + weight + "]";
 	}
 	
 	

@@ -22,6 +22,7 @@ public class Graph {
 	
 	public void addEdge(Edge e){
 		e.source.neighbours.add(e.destination);
+		e.destination.neighbours.add(e.source);
 		edges[eSize] = e;
 		eSize++;
 	}

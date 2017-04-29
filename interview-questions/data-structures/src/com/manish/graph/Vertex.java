@@ -18,7 +18,7 @@ public class Vertex {
 	
 	@Override
 	public String toString() {
-		return "Vertex [label=" + label + "]";
+		return "V [l=" + label + "]";
 	}
 	@Override
 	public int hashCode() {
