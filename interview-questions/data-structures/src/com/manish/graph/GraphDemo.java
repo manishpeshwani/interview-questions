@@ -3,7 +3,7 @@ package com.manish.graph;
 public class GraphDemo {
 	
 	public static void main(String[] args){
-		Graph g = new Graph();
+		Graph g = new Graph(false);
 		Vertex a = new Vertex("a");
 		Vertex b = new Vertex("b");
 		Vertex c = new Vertex("c");

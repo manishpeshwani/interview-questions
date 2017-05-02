@@ -7,7 +7,7 @@ import java.util.Set;
 public class CycleInDirectedGraph {
 
 	public static void main(String[] args) {
-		Graph g = new Graph();
+		Graph g = new Graph(true);
 		Vertex one = new Vertex("1");
 		Vertex two = new Vertex("2");
 		Vertex three = new Vertex("3");

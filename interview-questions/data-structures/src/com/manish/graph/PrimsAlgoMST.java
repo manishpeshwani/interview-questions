@@ -32,7 +32,7 @@ public class PrimsAlgoMST {
 	}
 
 	public static void main(String[] args) {
-		Graph graph = new Graph();
+		Graph graph = new Graph(false);
 
 		Vertex a = new Vertex("a");// 1
 		Vertex b = new Vertex("b");// 2

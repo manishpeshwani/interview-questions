@@ -11,6 +11,12 @@ public class Graph {
 	int vSize = 0;
 	int eSize = 0;
 	
+	boolean directional = false;
+	
+	Graph(boolean directional){
+		this.directional = directional;
+	}
+	
 	Vertex[] vertices = new Vertex[MAX_VERTICES];
 	
 	Edge[] edges = new Edge[MAX_VERTICES-1];
@@ -22,7 +28,9 @@ public class Graph {
 	
 	public void addEdge(Edge e){
 		e.source.neighbours.add(e.destination);
-		e.destination.neighbours.add(e.source);
+		if(!directional){
+			e.destination.neighbours.add(e.source);
+		}
 		edges[eSize] = e;
 		eSize++;
 	}

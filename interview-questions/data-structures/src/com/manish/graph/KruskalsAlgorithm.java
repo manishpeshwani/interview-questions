@@ -10,7 +10,7 @@ import com.manish.graph.DisjointSet.Node;
 public class KruskalsAlgorithm {
 
 	public static void main(String[] args) {
-		Graph graph = new Graph();
+		Graph graph = new Graph(false);
 		
 		Vertex a = new Vertex("a");//1
 		Vertex b = new Vertex("b");//2
